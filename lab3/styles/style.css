@@ -1,0 +1,207 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.body {
+    background-color: white;
+    min-height: 100%;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding: 10px;
+}
+
+.logophoto {
+    max-height: 100px;
+    max-width: 400px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button {
+    margin: 0 50px;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    transition-property: background-color, scale;
+    transition-duration: 0.2s, 0.2s, 0.5s;
+}
+
+main {
+    display: flex;
+    background-color: #9dbd00;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 0;
+    flex: 1 1 auto;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #9dbd00;
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.block_content {
+    padding: 40px;
+}
+
+.block_header {
+    text-align: center;
+}
+
+.button-burger {
+    display: none;
+}
+
+.button:hover {
+    border-color: white;
+    scale: 120%;
+    background-color: #9dbd00;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; 
+    background-color: white;
+    border: 1px solid black;
+}
+
+.burger-menu a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu a:hover {
+    background-color: #9dbd00;
+}
+
+
+/* Добавим стили для кнопок в зависимости от ширины экрана */
+@media screen and (max-width: 1920px) {
+    .button {
+        margin: 0 30px;
+    }
+    footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .button {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .button {
+        margin: 0 1px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .button-burger {
+        display: flex;
+        margin: 0 50px;
+        width: 130px;
+        height: 30px;
+        text-align: center;
+        padding: 10px 0 0 0;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 6px;
+        transition-property: background-color, scale;
+        transition-duration: 0.2s, 0.2s, 0.5s;
+        justify-content: center;
+    }
+
+    .button-burger:hover {
+        border-color: white;
+        scale: 120%;
+        background-color: #9dbd00;
+    }
+
+    .button {
+        display: none; /* Скрываем кнопки */
+    }
+
+    /* Показываем бургер-меню */
+    .buttons {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .button-burger {
+        margin: 0 20px;
+        transition-property: background-color, scale;
+        transition-duration: 0.2s, 0.2s, 0.5s;
+    }
+
+    .button-burger:hover {
+        background-color: #9dbd00;
+        scale: 120%;
+    }
+
+    /* Стили для бургер-меню */
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        top: 127px; /* Регулируйте положение бургер-меню по вертикали */
+        background-color: white;
+        border: 1px solid black;
+        width: 100%;
+        transition-property: background-color, scale;
+        transition-duration: 0.2s, 0.2s, 0.5s;
+    }
+
+    .burger-menu a {
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .burger-menu a:hover {
+        background-color: #9dbd00;
+        scale: 120%;
+    }
+}
+
