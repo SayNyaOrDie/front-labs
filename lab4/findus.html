@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Energy clinic</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script defer src="scripts/pageScript.js"></script>
+
+</head>
+
+<body>
+    <div class="body">
+
+        <header>
+            <div class="logo">
+                <a href="index.html" class="image-button">
+                    <img class="logophoto" src="imgs/EC.png" alt="">
+                </a>
+            </div>
+
+            <nav class="buttons">
+                <a class="button" href="about.html">О нас</a>
+                <a class="button" href="services.html">Услуги</a>
+                <a class="button" href="findus.html">Где нас найти</a>
+                <a class="button" href="register.html">Запись</a>
+                <a class="button-burger" href="#" onclick="toggleBurgerMenu()">Меню</a>
+            </nav>
+
+        </header>
+        <hr>
+            <div class="buttons burger-menu">
+                <a href="about.html">О нас</a>
+                <a href="services.html">Услуги</a>
+                <a href="findus.html">Где нас найти</a>
+                <a href="register.html">Запись</a>
+            </div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p id="popup-text">Время загрузки страницы: 0 мс</p>
+                </div>
+            </div>
+        <main>
+            <div class="first-block">
+                <h2 class="block_header">Где нас найти</h2>
+                <p class="block_content">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                    Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+                    используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков,
+                    но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами
+                    Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker,
+                    в шаблонах которых используется Lorem Ipsum.</p>
+            </div>
+        </main>
+
+        <div>
+            <footer>Типа Футер.<a href="https://google.com">Связаться с нами.</a><sub> &#248;</sub> </footer>
+        </div>
+    </div>
+
+    <script>
+        function toggleBurgerMenu() {
+            var burgerMenu = document.querySelector('.burger-menu');
+            burgerMenu.style.display = (burgerMenu.style.display === 'none' || burgerMenu.style.display === '') ? 'flex' : 'none';
+        }
+    </script>
+</body>
+
+</html>
